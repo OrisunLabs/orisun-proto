@@ -21,11 +21,11 @@ protoc --go_out=. --go_opt=paths=source_relative \
 
 ### Java
 
-The proto files are used by the Java client's Gradle build process. See [orisun-client-java](https://github.com/oexza/orisun-client-java) for usage.
+The proto files are used by the Java client's Gradle build process. See [orisun-client-java](https://github.com/OrisunLabs/orisun-client-java) for usage.
 
 ### Node.js
 
-The Node.js client has its own copy of the proto files. See [orisun-node-client](https://github.com/oexza/orisun-node-client).
+The Node.js client has its own copy of the proto files. See [orisun-node-client](https://github.com/OrisunLabs/orisun-node-client).
 
 ## License
 
@@ -33,4 +33,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Repository
 
-https://github.com/oexza/orisun-proto
+https://github.com/OrisunLabs/orisun-proto
