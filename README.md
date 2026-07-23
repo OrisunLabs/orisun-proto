@@ -11,13 +11,15 @@ This repository contains the shared Protocol Buffer definitions for the Orisun E
 
 ### Go
 
-Generate Go code from proto files:
+From the root of the main Orisun checkout, generate Go code with:
 
 ```bash
-protoc --go_out=. --go_opt=paths=source_relative \
-       --go-grpc_out=. --go-grpc_opt=paths=source_relative \
-       *.proto
+./scripts/generate_go_proto.sh
 ```
+
+In the main Orisun repository this writes both messages and service stubs to
+`orisun/grpcapi`. Other Go modules may override the Go package mapping when
+generating their own client bindings.
 
 ### Java
 
