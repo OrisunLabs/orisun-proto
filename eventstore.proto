@@ -17,6 +17,10 @@ message Position {
 message Tag {
   string key = 1;
   string value = 2;
+  // Supported: eq, ne, gt, gte, lt, lte. Empty means eq.
+  // Ordered comparisons use the stored JSON type: numbers numerically,
+  // strings lexicographically. Missing/null values never match.
+  string operator = 3;
 }
 
 message Criterion {
